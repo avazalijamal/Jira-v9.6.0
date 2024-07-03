@@ -35,8 +35,8 @@ echo "Addım 4: Crack Etmək Üçün Lazımi Mühitin Hazırlanması"
 printf "\n"
 cd /opt/atlassian/jira/atlassian-jira/WEB-INF/lib/
 sudo rm -f atlassian-extras-3.4.6.jar
-# sudo wget https://github.com/avazalijamal/Jira-v9.6.0/blob/master/atlassian-extras-3.4.6.jar
-sudo wget https://github.com/guywiththecrack/jira-crack/blob/master/atlassian-extras-3.4.6.jar
+sudo wget https://github.com/avazalijamal/Jira-v9.6.0/blob/master/atlassian-extras-3.4.6.jar
+# sudo wget https://github.com/guywiththecrack/jira-crack/blob/master/atlassian-extras-3.4.6.jar
 pwd
 
 printf "\n\n\n"
@@ -44,8 +44,8 @@ echo "Addım 5: Jira-nın Konfiqurasiya Edilməsi"
 printf "\n"
 cd /opt/atlassian/jira/bin/
 sudo ./start-jira.sh
-sudo ./stop-jira.sh
-sudo ./start-jira.sh
+# sudo ./stop-jira.sh
+# sudo ./start-jira.sh
 
 printf "\n\n\n"
 echo "Activ Etmək Üçün Lisenziya Açarı"
