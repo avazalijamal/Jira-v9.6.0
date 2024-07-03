@@ -44,8 +44,8 @@ echo "Addım 5: Jira-nın Konfiqurasiya Edilməsi"
 printf "\n"
 cd /opt/atlassian/jira/bin/
 sudo ./start-jira.sh
-# sudo ./stop-jira.sh
-# sudo ./start-jira.sh
+sudo ./stop-jira.sh
+sudo ./start-jira.sh
 
 printf "\n\n\n"
 echo "Activ Etmək Üçün Lisenziya Açarı"
