@@ -7,7 +7,7 @@ sudo /opt/atlassian/jira/bin/stop-jira.sh
 printf "\n\n\n"
 echo "Addım 2: Jira Qovluqlarını Silmək"
 sudo rm -rf /opt/atlassian
-sudo rm -rf /var/atlassian/application-data
+sudo rm -rf /var/atlassian
 
 printf "\n\n\n"
 echo "Addım 3: PostgreSQL Verilənlər Bazasını Silmək"
