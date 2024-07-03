@@ -2,10 +2,12 @@ echo "Jira Yüklənməsi Başladı"
 printf "\n"
 
 echo "Addım 1: Sistem Tələblərinin Yoxlanılması və Yenilənməsi"
+printf "\n"
 sudo apt-get update
 
 printf "\n\n\n"
 echo "Addım 2: Verilənlər Bazasının Quraşdırılması"
+printf "\n"
 sudo apt-get install postgresql postgresql-contrib -y
 sudo update-rc.d postgresql enable
 sudo service postgresql start
@@ -23,18 +25,21 @@ sudo -u postgres psql
 
 printf "\n\n\n"
 echo "Addım 3: Jira Software-nin Yüklənməsi və Quraşdırılması"
+printf "\n"
 wget https://www.atlassian.com/software/jira/downloads/binary/atlassian-jira-software-9.6.0-x64.bin
 chmod a+x atlassian-jira-software-9.6.0-x64.bin
 sudo ./atlassian-jira-software-9.6.0-x64.bin
 
 printf "\n\n\n"
 echo "Addım 4: Crack Etmək Üçün Lazımi Mühitin Hazırlanması"
+printf "\n"
 cd /opt/atlassian/jira/atlassian-jira/WEB-INF/lib/
 sudo rm -f atlassian-extras-3.4.6.jar
 sudo wget https://github.com/avazalijamal/Jira-v9.6.0/blob/master/atlassian-extras-3.4.6.jar
 
 printf "\n\n\n"
 echo "Addım 5: Jira-nın Konfiqurasiya Edilməsi"
+printf "\n"
 cd /opt/atlassian/jira/bin/
 sudo ./start-jira.sh
 sudo ./stop-jira.sh
