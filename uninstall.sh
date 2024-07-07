@@ -32,5 +32,11 @@ printf "\n\n\n"
 echo "Jira Yüklənməsi Bitdi"
 printf "\n"
 
+echo "Sistemdən `jira` İstifadəçisi və Qrupu Silinir"
+sudo userdel -r jira
+sudo groupdel jira
+compgen -u
+compgen -g
+
 echo "Sistemi Silinməsi Başlatmaq"
 sudo reboot
