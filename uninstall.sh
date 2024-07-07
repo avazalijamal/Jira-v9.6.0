@@ -35,8 +35,8 @@ printf "\n"
 echo "Sistemdən `jira` İstifadəçisi və Qrupu Silinir"
 sudo userdel -r jira
 sudo groupdel jira
-compgen -u
-compgen -g
+sudo compgen -u
+sudo compgen -g
 
 echo "Sistemi Silinməsi Başlatmaq"
 sudo reboot
